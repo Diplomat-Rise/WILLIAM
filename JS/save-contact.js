@@ -38,13 +38,15 @@ function downloadVCard() {
   const vCardData = `
 BEGIN:VCARD
 VERSION:3.0
-FN:Ahmad Uzair Chaudhary
+FN:WILLIAM JR KABAROLE
 TITLE:Sales Manager
 ORG:RISE Properties
+TEL;TYPE=WORK,VOICE:+971554734823
+TEL;TYPE=WORK,VOICE:+971581190506 
 TEL;TYPE=WORK,VOICE:+97145665109
-EMAIL:Ahmed.Uzair@riseproperties.ae
+EMAIL:william@dpdxb.com 
 URL:http://www.riseproperties.ae
-ADR;TYPE=WORK:;;PO Box No 455979, Office NO.1607, Opal Tower, Business Bay;Dubai;;UAE
+ADR;TYPE=WORK:;;PO Box No 181702, Office NO.1607, Opal Tower, Business Bay;Dubai;;UAE
 END:VCARD
   `.trim();
 
@@ -53,7 +55,7 @@ END:VCARD
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'Ahmad Uzair Chaudhary.vcf';
+  a.download = 'WILLIAM JR KABAROLE.vcf';
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
